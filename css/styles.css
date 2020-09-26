@@ -1,0 +1,158 @@
+@import url(pygments.css);
+@import url(reset.css);
+
+/* General stuff. */
+
+body {
+    width: 1024px;
+}
+
+html { /* This stuff is for the sticky footer. */
+    min-height:100%;
+    position:relative;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color:#fafafa;
+    font-family:'Open Sans';
+    margin: 20px auto 100px auto; /* For sticky footer. */
+}
+
+/* Site header. */
+
+.sitebanner {
+    position: left;
+}
+
+.siteheader {
+    overflow: visible;
+}
+
+.siteimage {
+    float: right;
+}
+
+.sitetitle {
+    font-size: 1.7em;
+    padding-left: 10px; /* Hack to dodge :hover issue. */
+    position: relative; /* Hack to dodge :hover issue. */
+    left: -10px; /* Hack to dodge :hover issue. */
+}
+
+ol li {
+    margin-bottom: 0.5em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.0em;
+    color: black;
+}
+
+.posttitle {
+    font-size: 1.5em;
+    color: royalblue;    
+}
+
+.posttitle a {
+    position: relative; /* Hack to dodge :hover issue. */
+}
+
+.post {
+    margin-top: 1.0em;
+    margin-left: 20px;    
+    margin-bottom: 1.0em;
+}
+
+/* Links. */
+
+blockquote a {
+    color: dimgrey;
+}
+
+a { /* Generic link styling, greyish and underlined. */
+    color: hotpink;
+    text-decoration: none;
+    -o-transition:color .2s ease-in-out;
+    -webkit-transition:color .2s ease-in-out;
+    -moz-transition:color .2s ease-in-out;
+    transition:color .2s ease-in-out;
+}
+
+.nodec {
+    /* Links that aren't just in content areas shouldn't be underlined */
+    text-decoration: none;
+}
+
+a:hover { /* Hover style: transition to orange. Cool! */
+    -o-transition:color .2s ease-in-out;
+    -webkit-transition:color .2s ease-in-out;
+    -moz-transition:color .2s ease-in-out;
+    transition:color .2s ease-in-out;
+    color: orange;
+}
+
+/* Generic to all content. */
+
+.content ol, .content ul {
+    position: relative;
+    left: 40px;
+}
+
+/* Make super and subscipts look reasonable. */
+
+sup, sub {
+    vertical-align: 0;
+    position: relative;
+}
+
+sup {
+    bottom: 1ex;
+    font-size: 0.6em;
+}
+
+sub {
+    top: 0.8ex;
+    font-size: 0.6em;
+}
+
+/* Images */
+
+/* Blockquotes */
+
+blockquote {
+    font-size: 1.0em;
+    line-height: 1.4em;
+}
+
+strong {
+    font-size: 1.0em;
+    line-height: 1.3em;
+}
+
+/* Code */
+
+.codehilite, .highlight { /* Put code blocks in the right place. */
+    background-color:#fefefe;
+    width: 800px;
+    margin: 0 0 0 0;
+    margin-bottom: 20px;
+    overflow: auto;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+/* Footer at page bottom */
+
+footer {
+    bottom: 0;
+    color: grey;
+    font-size: 1.0em;
+    margin-bottom: 2.0em;
+    position: absolute;
+}
